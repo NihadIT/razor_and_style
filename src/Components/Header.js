@@ -6,7 +6,7 @@ import phone from "../images/icons/phone.png";
 
 const Header = () => {
   return (
-    <div className="header-container">
+    <div className="header">
       <div className="container">
         <div className="header-top">
           <a href="#" className="logo-link">

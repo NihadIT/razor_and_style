@@ -1,16 +1,17 @@
 import React from "react";
 import "./Home.css";
-import CarouselBox from '../Components/CarouselBox';
+import CarouselBox from "../Components/CarouselBox";
 
-function Home () {
-    const content = 
+function Home() {
+  const content = (
     <div className="content">
-         <div className="carousel-container">
+      <div className="carousel-container">
         <CarouselBox />
-        </div>
+      </div>
     </div>
-        
-    return <div>{content}</div>
+  );
+
+  return <div>{content}</div>;
 }
 
 export default Home;

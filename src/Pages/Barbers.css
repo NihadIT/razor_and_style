@@ -1,0 +1,67 @@
+.barbers {
+  margin-top: 2%;
+  height: 100vh;
+  width: 100%;
+}
+
+.barbers-container {
+  position: relative;
+  margin: 7% 10%;
+  display: flex;
+  height: 60%;
+  align-items: center;
+}
+
+.barbers-container-description {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+  overflow-y: auto;
+  background-color: black;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.barbers-container-description span {
+  font-size: 2vh;
+  line-height: 1.6;
+  color: white;
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.barbers-container-description .text-bold {
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.barbers-container-slider {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.barbers-container-slider .carousel-img {
+  height: 50vh;
+  object-fit: cover;
+  margin: auto;
+}
+
+.barbers-container-slider .carousel-img {
+  border-radius: 20px;
+}
+
+.barbers-container-slider .carousel-caption h3 {
+  font-weight: bold;
+  text-shadow: black 3px 2px;
+  font-size: 3vh;
+}
+
+.barbers-container-slider .carousel-caption p {
+  text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em black;
+  font-size: 2vh;
+}
+
+.barbers-container .carousel-indicators {
+  visibility: hidden;
+}

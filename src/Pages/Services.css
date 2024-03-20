@@ -1,0 +1,121 @@
+.services {
+  display: inline-block;
+  position: relative;
+  margin-top: 2%;
+  height: 100vh;
+  width: 100%;
+}
+
+.container-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-main {
+  position: relative;
+  width: 23%;
+  margin: 30px 10%;
+  border: 1px solid white;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.service-main::after,
+.service-main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+}
+
+.service-main::after {
+  top: 0;
+  left: -100%;
+  animation: running-line 2s linear infinite;
+}
+
+.service-main::before {
+  bottom: 0;
+  left: 100%;
+  animation: running-line-reverse 2s linear infinite;
+}
+
+@keyframes running-line {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes running-line-reverse {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.service-header {
+  text-align: center;
+}
+
+.service-description {
+  margin-top: 14px;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.service-price {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.service-button {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.service-button a {
+  border: 1px solid orange;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+}
+
+.service-button a:hover {
+  background-color: orange;
+  color: white;
+}
+
+.barber-img-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  margin-top: 50px;
+}
+
+.barber-img-center img {
+  max-width: 100%;
+}
+
+.service-shaving {
+  position: absolute;
+  left: 55%;
+  top: 7%;
+}
+
+.service-spa {
+  position: absolute;
+  left: 55%;
+  top: 46.5%;
+}

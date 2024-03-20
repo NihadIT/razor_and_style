@@ -4,12 +4,13 @@ import logo from "../images/logo.png";
 import pastel from "../images/icons/pastel.png";
 import phone from "../images/icons/phone.png";
 
+
 const Header = () => {
-  return (
+  return <>
     <div className="header">
       <div className="container">
         <div className="header-top">
-          <a href="#" className="logo-link">
+          <a href="/" className="logo-link">
             <img src={logo} className="logo-img" alt="logo" />
           </a>
           <div className="info">
@@ -27,8 +28,8 @@ const Header = () => {
         </div>
         <div className="navbar">
           <ul className="nav">
-            <li className="nav-item"><a href="#" className="nav-link">Услуги и цены</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">Барберы</a></li>
+            <li className="nav-item"><a href="/services" className="nav-link">Услуги и цены</a></li>
+            <li className="nav-item"><a href="/barbers" className="nav-link">Барберы</a></li>
             <li className="nav-item"><a href="#" className="nav-link">Фотогалерея</a></li>
             <li className="nav-item"><a href="#" className="nav-link">О нас</a></li>
             <li className="nav-item"><a href="#" className="nav-link">Отзывы</a></li>
@@ -37,7 +38,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  );
+</>
 };
 
 export default Header;

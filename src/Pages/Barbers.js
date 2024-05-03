@@ -11,7 +11,7 @@ function Barbers() {
   return (
     <div className="content">
       <div className="barbers">
-        <h2 className="container-title">НАШИ БАРБЕРЫ</h2>
+        <h2 className="title">НАШИ БАРБЕРЫ</h2>
         <div className="barbers-container">
           <div className="barbers-container-description">
             <span>

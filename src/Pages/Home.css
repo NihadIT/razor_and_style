@@ -52,7 +52,6 @@
   position: absolute;
   background: none;
   cursor: pointer;
-  padding: 0;
   top: 75%;
   left: 4.6%;
   z-index: 1;
@@ -60,5 +59,30 @@
 }
 
 .carousel-btn img {
-  width: 17vh;
+  width: 15vh;
+}
+
+@media(max-width: 1280px) {
+  .carousel-indicators button {
+    width: 1vh !important;
+    visibility: hidden;
+  }
+
+  .carousel-indicators {
+    visibility: hidden;
+  }
+
+  .carousel-btn img {
+    width: 10vh;
+  }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 769px) { 
+  .carousel-btn img {
+    width: 5vh;
+  }
 }

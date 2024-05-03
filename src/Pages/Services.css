@@ -1,22 +1,25 @@
 .services {
   display: inline-block;
-  position: relative;
   margin-top: 2%;
   height: 100vh;
   width: 100%;
 }
 
-.container-title {
+.title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
 }
 
 .service-main {
   position: relative;
-  width: 23%;
-  margin: 30px 10%;
   border: 1px solid white;
-  padding: 30px;
+  padding: 20px;
   overflow: hidden;
 }
 
@@ -65,25 +68,24 @@
 
 .service-description {
   margin-top: 14px;
-  font-size: 18px;
+  font-size: 2vh;
   text-align: left;
   padding: 0 10px;
 }
 
-.service-price {
-  display: inline-block;
-  margin-left: 100px;
+.service-footer {
+  display: flex;
+  margin-top: 20px;
 }
 
-.service-button {
-  display: inline-block;
-  margin-top: 30px;
+.service-price {
+  margin-left: 20px;
 }
 
 .service-button a {
   border: 1px solid orange;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 2vh;
   padding: 10px;
   text-decoration: none;
   background-color: transparent;
@@ -102,20 +104,59 @@
   transform: translate(-50%, -50%);
   width: 40%;
   margin-top: 50px;
+  opacity: 0.5;
 }
 
 .barber-img-center img {
   max-width: 100%;
 }
 
-.service-shaving {
-  position: absolute;
-  left: 55%;
-  top: 7%;
+.icons {
+  display: none;
 }
 
-.service-spa {
+.icons img:first-child {
   position: absolute;
-  left: 55%;
-  top: 46.5%;
+  top: 40%;
+  opacity: 0.2;
+}
+
+.icons img:last-child {
+  position: absolute;
+  top: 100%;
+  left: 90%;
+  opacity: 0.3;
+}
+
+@media(min-width: 1280px) {
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+  }
+  .service-main {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 815px) {
+ 
+  .service-main {
+    width: 50%;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barber-img-center {
+    visibility: hidden;
+  }
+
+  .icons {
+    display: block;
+  }
 }

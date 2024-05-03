@@ -1,0 +1,11 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.gallery {
+    margin-top: 5%;
+    height: 100vh;
+    width: 100%;
+  }
+
+.gallery-container-images img {
+    height: 80vh;
+}

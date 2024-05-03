@@ -1,13 +1,15 @@
 import React from "react";
 import "./Services.css";
 import barber_img from "../images/slide/service_hair.png";
+import comb from "../images/icons/comb.png";
+import haird from "../images/icons/haird.png";
 
 function Services() {
   const content = (
     <div className="content">
       <div className="services">
+      <h2 className="title">УСЛУГИ БАРБЕРШОПА</h2>
         <div className="services-container">
-          <h2 className="container-title">УСЛУГИ БАРБЕРШОПА</h2>
           <div className="service-main service-haircut">
             <div className="service-header">
               <h3>Мужские стрижки</h3>
@@ -86,6 +88,10 @@ function Services() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="icons">
+      <img src={comb}/>
+      <img src={haird}/>
       </div>
     </div>
   );

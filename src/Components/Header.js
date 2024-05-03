@@ -1,11 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import "./Header.css";
 import logo from "../images/logo.png";
 import pastel from "../images/icons/pastel.png";
 import phone from "../images/icons/phone.png";
 
-
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return <>
     <div className="header">
       <div className="container">
@@ -27,14 +32,21 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar">
-          <ul className="nav">
+        <ul className={`nav ${isOpen ? 'show' : ''}`} id="navbarToggleExternalContent">
             <li className="nav-item"><a href="/services" className="nav-link">Услуги и цены</a></li>
             <li className="nav-item"><a href="/barbers" className="nav-link">Барберы</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">Фотогалерея</a></li>
+            <li className="nav-item"><a href="/gallery" className="nav-link">Фотогалерея</a></li>
             <li className="nav-item"><a href="#" className="nav-link">О нас</a></li>
             <li className="nav-item"><a href="#" className="nav-link">Отзывы</a></li>
             <li className="nav-item"><a href="#" className="nav-link">Контакты</a></li>
           </ul>
+
+          <nav className="navbar navbar-dark bg-dark">
+            <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
+              <span className="navbar-toggler-icon"></span>
+            </button>
+         </nav>
+
         </div>
       </div>
     </div>

@@ -20,12 +20,12 @@
 .address, .contact {
   align-items: center;
   margin-right: 30px;
+  font-size: 20px;
 }
 
 .address span,
 .contact span {
   color: white;
-  font-size: 20px;
 }
 
 .address span:last-child,
@@ -49,6 +49,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 18px;
 }
 
 .nav-item {
@@ -59,10 +60,77 @@
 .nav-link {
   text-decoration: none;
   color: white !important;
-  font-size: 18px;
   text-shadow: 1px 1px 1px #000;
 }
 
 .nav-link:hover {
   color: yellow !important;
+}
+
+.show {
+  display: flex !important; 
+  flex-direction: column;
+  position: absolute; 
+  top: 80px;
+  left: 0;
+  background-color: black; 
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10px;
+  list-style: none;
+  visibility: hidden;
+}
+
+
+@media (max-width: 1024px) {
+
+    #navbarToggleExternalContent {
+      display: none;
+    }
+    
+    .navbar-toggler {
+      display: block;
+    }
+
+  .address, .contact {
+    font-size: 16px;
+  }
+
+  .address img,
+  .contact img {
+    width: 14px;
+  }
+
+  .address span:last-child,
+  .contact span:last-child {
+    font-size: 10px;
+  }
+
+  .navbar {
+    border-radius: 30px;
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
+}
+
+
+@media (min-width: 769px) {
+
+   #navbarToggleExternalContent {
+    display: block;
+  }
+  
+  .navbar-toggler {
+    display: none;
+  }
+
 }

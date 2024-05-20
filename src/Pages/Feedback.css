@@ -1,0 +1,95 @@
+.feedback .content {
+  position: relative;
+  height: 100vh;
+}
+
+.feedback-block {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 80%;
+}
+
+.client-feedback {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 60vw;
+  padding: 20px;
+  margin: 10px auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    9deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(8, 8, 32, 1) 43%,
+    rgba(3, 39, 92, 1) 100%
+  );
+}
+
+.client-feedback img {
+  display: inline-block;
+  width: 5vw;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid blue;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.client-feedback strong {
+  display: inline-block;
+  font-size: clamp(14px, 2.5vw, 24px);
+}
+
+.client-feedback span {
+  display: block;
+  padding: 10px;
+  font-size: calc(12px + 5 * (100vw / 1280));
+}
+
+.client-feedback form {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-feedback label {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.client-feedback textarea {
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.client-feedback input[type="file"] {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.client-feedback button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.client-feedback button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1000px) {
+  .client-feedback img {
+    width: calc(50px + 5 * (100vw / 1280));
+  }
+}

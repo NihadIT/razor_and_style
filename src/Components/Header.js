@@ -36,9 +36,9 @@ const Header = () => {
             <li className="nav-item"><a href="/services" className="nav-link">Услуги и цены</a></li>
             <li className="nav-item"><a href="/barbers" className="nav-link">Барберы</a></li>
             <li className="nav-item"><a href="/gallery" className="nav-link">Фотогалерея</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">О нас</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">Отзывы</a></li>
-            <li className="nav-item"><a href="#" className="nav-link">Контакты</a></li>
+            <li className="nav-item"><a href="/about" className="nav-link">О нас</a></li>
+            <li className="nav-item"><a href="/feedback" className="nav-link">Отзывы</a></li>
+            <li className="nav-item"><a href="/contacts" className="nav-link">Контакты</a></li>
           </ul>
 
           <nav className="navbar navbar-dark bg-dark">

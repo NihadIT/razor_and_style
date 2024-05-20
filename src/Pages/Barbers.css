@@ -14,7 +14,7 @@
 
 .barbers-container-description {
   flex: 1;
-  max-width: 40%;
+  width: 40%;
   margin-right: 20px;
   overflow-y: auto;
   background-color: black;
@@ -26,12 +26,12 @@
   font-size: 2vh;
   line-height: 1.6;
   color: white;
-  text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 .barbers-container-description .text-bold {
-    font-weight: bold;
-    text-shadow: none;
+  font-weight: bold;
+  text-shadow: none;
 }
 
 .barbers-container-slider {
@@ -51,6 +51,14 @@
   border-radius: 20px;
 }
 
+.barbers-container-slider .carousel-caption {
+  max-width: 50%;
+  max-height: 40%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  left: 25%;
+}
+
 .barbers-container-slider .carousel-caption h3 {
   font-weight: bold;
   text-shadow: black 3px 2px;
@@ -64,4 +72,33 @@
 
 .barbers-container .carousel-indicators {
   visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+  .barbers-container {
+    margin: 0;
+    height: 60%;
+  }
+
+  .barbers-container-description {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .barbers-container {
+    height: 90%;
+    margin: 0;
+    display: block;
+  }
+
+  .barbers-container-description {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+  }
+
+  .barbers-container-slider {
+    width: 100%;
+  }
 }

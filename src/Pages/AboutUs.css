@@ -1,0 +1,71 @@
+h2,
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about_us .content {
+  height: 100vh;
+}
+
+.about_us .blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  border: 1px solid gray;
+  width: 40%;
+  align-items: center;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.about:hover {
+  background-color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  opacity: 1;
+  color: yellow;
+}
+
+.about:last-child {
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+.about-barbershop,
+.about-filosofie,
+.about-service {
+  background-size: cover;
+  background-position: center;
+}
+
+.about-barbershop:hover {
+  background-image: url("/src/images/gallery/room_1.jpg");
+}
+
+.about-filosofie:hover {
+  background-image: url("/src/images/gallery/9.jpg");
+}
+
+.about-service:hover {
+  background-image: url("/src/images/gallery/2.jpg");
+}
+
+.about-team:hover {
+  background-image: url("/src/images/slide/barbers.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 1050px) {
+  .about_us {
+    overflow-y: auto;
+  }
+
+  .about {
+    width: 100%;
+  }
+}

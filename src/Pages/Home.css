@@ -62,7 +62,113 @@
   width: 15vh;
 }
 
-@media(max-width: 1280px) {
+.home .description {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.hair-block,
+.style-block {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2vh;
+  padding: 10px;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.hair-block img,
+.style-block img {
+  width: 50px;
+  display: block;
+  margin: 10px auto;
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form-container {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 2vh;
+  padding: 2px 7px !important;
+  background: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #0056b3;
+}
+
+.confirmation-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 5px;
+}
+
+@media (max-width: 1280px) {
+  .content {
+    min-height: calc(100vh - 100px);
+  }
+
+  .content .carousel {
+    width: 90%;
+  }
+
   .carousel-indicators button {
     width: 1vh !important;
     visibility: hidden;
@@ -77,11 +183,36 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
+  .home .content {
+    margin: 0;
+  }
 
-}
+  .home .description {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (max-width: 769px) { 
+  .content .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .content .carousel-img {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 2%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
   .carousel-btn img {
     width: 5vh;
   }

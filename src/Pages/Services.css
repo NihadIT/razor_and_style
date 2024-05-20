@@ -7,13 +7,14 @@
 
 .title {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 
 .services-container {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .service-main {
@@ -99,12 +100,11 @@
 
 .barber-img-center {
   position: absolute;
-  top: 45%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  margin-top: 50px;
-  opacity: 0.5;
+  transform: translate(-50%, 80%);
+  width: 35%;
+  opacity: 0.7;
 }
 
 .barber-img-center img {
@@ -118,32 +118,50 @@
 .icons img:first-child {
   position: absolute;
   top: 40%;
-  opacity: 0.2;
+  left: 3%;
+  opacity: 0.1;
 }
 
 .icons img:last-child {
   position: absolute;
-  top: 100%;
-  left: 90%;
-  opacity: 0.3;
+  top: 90%;
+  left: 85%;
+  opacity: 0.2;
 }
 
-@media(min-width: 1280px) {
-
+@media (max-width: 2500px) {
   .services-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .service-main {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 2000px) {
+  .barber-img-center {
+    display: none;
+  }
+
+  .service-main {
+    width: 100%;
   }
 }
 
-@media(max-width: 815px) {
- 
+@media (max-width: 815px) {
+  .services {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    border: 3px solid #434343;
+    padding: 20px;
+    border-radius: 3%;
+  }
+
   .service-main {
-    width: 50%;
+    width: 100%;
   }
 
   .services-container {
@@ -158,5 +176,11 @@
 
   .icons {
     display: block;
+  }
+}
+
+@media (max-width: 370px) {
+  .service-button a {
+    font-size: 1vh;
   }
 }

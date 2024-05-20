@@ -1,6 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   position: relative;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -18,7 +22,7 @@ code {
 }
 
 @media(max-width: 815px) {
-    body {
-      min-height: 2000px;
-    }
+  #root {
+    overflow-y: auto;
+  }
 }

@@ -17,7 +17,8 @@
   display: flex;
 }
 
-.address, .contact {
+.address,
+.contact {
   align-items: center;
   margin-right: 30px;
   font-size: 20px;
@@ -36,13 +37,17 @@
   margin-right: 20px;
 }
 
-.address img, .contact img {
+.address img,
+.contact img {
   width: 20px;
   margin-right: 10px;
 }
 
 .navbar {
   margin-top: 20px;
+  border-radius: 30px;
+  opacity: 0.9;
+  z-index: 1;
 }
 
 .nav {
@@ -68,31 +73,34 @@
 }
 
 .show {
-  display: flex !important; 
+  display: flex !important;
   flex-direction: column;
-  position: absolute; 
+  position: absolute;
   top: 80px;
   left: 0;
-  background-color: black; 
+  background-color: black;
   padding: 10px;
-  z-index: 1;
+  z-index: 999;
   border-radius: 10px;
   list-style: none;
   visibility: hidden;
 }
 
-
 @media (max-width: 1024px) {
+  .logo-img {
+    width: 11vh;
+  }
 
-    #navbarToggleExternalContent {
-      display: none;
-    }
-    
-    .navbar-toggler {
-      display: block;
-    }
+  #navbarToggleExternalContent {
+    display: none;
+  }
 
-  .address, .contact {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .address,
+  .contact {
     font-size: 16px;
   }
 
@@ -106,12 +114,6 @@
     font-size: 10px;
   }
 
-  .navbar {
-    border-radius: 30px;
-    opacity: 0.9;
-    z-index: 1;
-  }
-
   .nav {
     font-size: 14px;
   }
@@ -119,18 +121,35 @@
   .show {
     visibility: visible;
   }
-
 }
 
-
 @media (min-width: 769px) {
-
-   #navbarToggleExternalContent {
+  #navbarToggleExternalContent {
     display: block;
   }
-  
+
   .navbar-toggler {
     display: none;
   }
+}
 
+@media (max-width: 456px) {
+  .logo-img {
+    width: 20vw;
+  }
+
+  .address,
+  .contact {
+    font-size: 10px;
+  }
+
+  .address img,
+  .contact img {
+    width: 10px;
+  }
+
+  .address span:last-child,
+  .contact span:last-child {
+    font-size: 6px;
+  }
 }

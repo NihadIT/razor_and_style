@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 Not Found</title>
   <script>
-    const baseUrl = '/';
-    const path = window.location.pathname.replace(baseUrl, '');
-    const redirectUrl = baseUrl + path;
+    const pathname = window.location.pathname;
+    const search = window.location.search;
+    const redirectUrl = '/razor_and_style' + pathname + search;
     window.location.replace(redirectUrl);
   </script>
 </head>
 <body>
   <h1>404 Not Found</h1>
+  <p>Redirecting...</p>
 </body>
 </html>

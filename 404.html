@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Страница не найдена</title>
-  <script type="text/javascript">
-    // Перенаправление всех 404 на index.html для обработки React Router
-    var pathname = window.location.pathname;
-    var search = window.location.search;
-    var redirectUrl = '/?' + encodeURIComponent('redirect=' + pathname + search);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <script>
+    const baseUrl = '/razor_and_style/';
+    const path = window.location.pathname.replace(baseUrl, '');
+    const redirectUrl = baseUrl + '#' + path;
     window.location.replace(redirectUrl);
   </script>
 </head>
 <body>
-  <h1>Страница не найдена</h1>
-  <p>Перенаправление...</p>
+  <h1>404 Not Found</h1>
 </body>
 </html>

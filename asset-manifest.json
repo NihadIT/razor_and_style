@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/razor_and_style/static/css/main.8a6e91f5.css",
-    "main.js": "/razor_and_style/static/js/main.442d7f24.js",
+    "main.js": "/razor_and_style/static/js/main.8e0051d4.js",
     "static/js/453.bb1adb56.chunk.js": "/razor_and_style/static/js/453.bb1adb56.chunk.js",
     "static/media/barbers.jpg": "/razor_and_style/static/media/barbers.0c312ede8fa919a02685.jpg",
     "static/media/slide_2.png": "/razor_and_style/static/media/slide_2.3b346a1697b52fa70eac.png",
@@ -29,11 +29,11 @@
     "static/media/logo.png": "/razor_and_style/static/media/logo.b85156447d2612f399dd.png",
     "index.html": "/razor_and_style/index.html",
     "main.8a6e91f5.css.map": "/razor_and_style/static/css/main.8a6e91f5.css.map",
-    "main.442d7f24.js.map": "/razor_and_style/static/js/main.442d7f24.js.map",
+    "main.8e0051d4.js.map": "/razor_and_style/static/js/main.8e0051d4.js.map",
     "453.bb1adb56.chunk.js.map": "/razor_and_style/static/js/453.bb1adb56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a6e91f5.css",
-    "static/js/main.442d7f24.js"
+    "static/js/main.8e0051d4.js"
   ]
 }

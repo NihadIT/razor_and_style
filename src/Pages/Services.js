@@ -10,10 +10,10 @@ function Services() {
       <h2 className="title">УСЛУГИ БАРБЕРШОПА</h2>
       <div className="services">
         <div className="services-container">
-        <div className="icons">
-              <img src={comb} />
-              <img src={haird} />
-            </div>
+          <div className="icons">
+            <img src={comb} />
+            <img src={haird} />
+          </div>
           <div className="service-main service-haircut">
             <div className="service-header">
               <h3>Мужские стрижки</h3>

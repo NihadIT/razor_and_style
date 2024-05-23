@@ -11,11 +11,15 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return <>
     <div className="header">
       <div className="container">
         <div className="header-top">
-          <a href="/" className="logo-link">
+          <a href="#/" className="logo-link">
             <img src={logo} className="logo-img" alt="logo" />
           </a>
           <div className="info">
@@ -33,14 +37,13 @@ const Header = () => {
         </div>
         <div className="navbar">
         <ul className={`nav ${isOpen ? 'show' : ''}`} id="navbarToggleExternalContent">
-            <li className="nav-item"><a href="/services" className="nav-link">Услуги и цены</a></li>
-            <li className="nav-item"><a href="/barbers" className="nav-link">Барберы</a></li>
-            <li className="nav-item"><a href="/gallery" className="nav-link">Фотогалерея</a></li>
-            <li className="nav-item"><a href="/about" className="nav-link">О нас</a></li>
-            <li className="nav-item"><a href="/feedback" className="nav-link">Отзывы</a></li>
-            <li className="nav-item"><a href="/contacts" className="nav-link">Контакты</a></li>
+            <li className="nav-item"><a href="#/services" onClick={closeNavbar} className="nav-link">Услуги и цены</a></li>
+            <li className="nav-item"><a href="#/barbers" onClick={closeNavbar} className="nav-link">Барберы</a></li>
+            <li className="nav-item"><a href="#/gallery" onClick={closeNavbar} className="nav-link">Фотогалерея</a></li>
+            <li className="nav-item"><a href="#/about" onClick={closeNavbar} className="nav-link">О нас</a></li>
+            <li className="nav-item"><a href="#/feedback" onClick={closeNavbar} className="nav-link">Отзывы</a></li>
+            <li className="nav-item"><a href="#/contacts" onClick={closeNavbar} className="nav-link">Контакты</a></li>
           </ul>
-
           <nav className="navbar navbar-dark bg-dark">
             <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
               <span className="navbar-toggler-icon"></span>

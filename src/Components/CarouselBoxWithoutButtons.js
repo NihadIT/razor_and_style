@@ -6,7 +6,11 @@ const CarouselBoxWithoutButtons = ({ slides }) => {
     <Carousel className="carousel">
       {slides.map((slide, index) => (
         <Carousel.Item key={index}>
-          <img className="carousel-img" src={slide.image} alt={`slide_${index}`} />
+          <img
+            className="carousel-img"
+            src={slide.image}
+            alt={`slide_${index}`}
+          />
           <Carousel.Caption>
             <h3>{slide.title}</h3>
             <p>{slide.description}</p>

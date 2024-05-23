@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <script>
+    const baseUrl = '/razor_and_style';
+    const path = window.location.pathname.replace(baseUrl, '');
+    const redirectUrl = baseUrl + '#' + path;
+    window.location.replace(redirectUrl);
+  </script>
+</head>
+<body>
+  <h1>404 Not Found</h1>
+</body>
+</html>

@@ -13,20 +13,20 @@ function Contacts() {
         <div className="contacts-info">
           <div className="contact-instagram">
             <a href="https://www.instagram.com/nihad353/">
-            <img src={ig} alt="instagram" />
-            <span>Instagram</span>
+              <img src={ig} alt="instagram" />
+              <span>Instagram</span>
             </a>
           </div>
           <div className="contact-telegram">
             <a href="https://t.me/nihadbabaev">
-            <img src={tg} alt="telegram" />
-            <span>Telegram</span>
+              <img src={tg} alt="telegram" />
+              <span>Telegram</span>
             </a>
           </div>
           <div className="contact-whatsapp">
             <a href="#">
-            <img src={wa} alt="whatsapp" />
-            <span>Whatsapp</span>
+              <img src={wa} alt="whatsapp" />
+              <span>Whatsapp</span>
             </a>
           </div>
         </div>

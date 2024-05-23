@@ -7,7 +7,7 @@ import room_2 from "../images/gallery/room_2.jpg";
 function Gallery() {
   const images = [
     {
-      original: "http://surl.li/scphn",
+      original: "http://surl.li/twqeo",
     },
     {
       original: "http://surl.li/scpdm",
@@ -16,13 +16,13 @@ function Gallery() {
       original: "http://surl.li/scpel",
     },
     {
-      original: "http://surl.li/scpex",
+      original: "http://surl.li/twqdz",
     },
     {
       original: "http://surl.li/scpff",
     },
     {
-      original: "http://surl.li/scpfk",
+      original: "http://surl.li/twqed",
     },
   ];
 
@@ -35,8 +35,9 @@ function Gallery() {
           </div>
         </div>
         <div className="barber-rooms">
-        <strong>
-        Наше здание - не просто место, где вы получаете качественные услуги по уходу за собой, это настоящий оазис стиля и комфорта. 
+          <strong>
+            Наше здание - не просто место, где вы получаете качественные услуги
+            по уходу за собой, это настоящий оазис стиля и комфорта.
           </strong>
           <img src={room_1} alt="room_1" />
           <img src={room_2} alt="room_2" />

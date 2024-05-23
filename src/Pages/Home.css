@@ -1,8 +1,3 @@
-.content {
-  position: relative;
-  margin: 0 7%;
-}
-
 .content .carousel {
   width: 80%;
   margin: 0 auto;
@@ -64,9 +59,17 @@
 
 .home .description {
   display: none;
+}
+
+.home .description .hair-block,
+.home .description .style-block {
+  padding: 40px;
   width: 100%;
   margin: 0 auto;
-  padding: 50px;
+}
+
+.strong {
+  color: white;
 }
 
 .hair-block,
@@ -160,6 +163,18 @@
   border-radius: 5px;
 }
 
+.video-container {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-container iframe {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 40vh;
+}
+
 @media (max-width: 1280px) {
   .content {
     min-height: calc(100vh - 100px);
@@ -215,5 +230,9 @@
 
   .carousel-btn img {
     width: 5vh;
+  }
+
+  .video-container {
+    display: block;
   }
 }

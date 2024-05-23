@@ -14,15 +14,16 @@ a {
 .contacts-info {
   width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 50px auto;
   justify-content: center;
+  text-align: center;
   gap: 30px;
 }
 
 .contacts-info img {
   display: block;
   margin: 0 auto;
-  width: 4vw;
+  width: calc(36px + 5 * (100vw / 1280));
 }
 
 .contacts-info span {
